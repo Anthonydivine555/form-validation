@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<link rel="stylesheet" href="css/survey.css">
+<link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+<body>
+
+    <div class="submitted-success"><span>✅</span><span>form submitted successfully</span></div>
+    <div class="survey">
+        <div class="header">
+        <div class="user-container">
+            <span class="ti-user"></span>
+        </div>
+    </div>
+        <form action="" id="signup-form" method="post">
+            <div class="details">
+                <label for="">first name*</label>
+                <div class="icons">
+                    <span class="ti-user"></span>
+                </div>
+                
+                <input type="text" name="first name" id="first-name">
+                <p class="error message"></p>
+            </div>
+            <div class="details">
+                <label for="">last name*</label>
+                <div class="icons">
+                    <span class="ti-user"></span>
+                </div>
+                
+                <input type="text" name="last name" id="last-name">
+                <p class="error message"></p>
+            </div>
+            <div class="details">
+                <label for="">phone number*</label>
+                <div class="icons">
+                    <span class="ti-mobile"></span>
+                </div>
+                
+                <input type="tel" name="phone number" id="phone-number">
+                <p class="error message"></p>
+            </div>
+            <div class="details">
+                <label for="email">email*</label>
+                <span class="ti-email"></span>
+
+                <input type="email" name="email" id="email">
+                <p class="error message"></p>
+            </div>
+        
+            <div class="radio">
+                <label class="gender" for="">gender</label>
+                <div class="genz">
+                    
+                    <input type="radio" id="check" name="gender">
+                    <label for="check" id="male">male</label>
+                    
+                    <input type="radio" id="checkmate" name="gender">
+                    <label for="checkmate" id="female">female</label>
+
+                    <p class="error message"></p>
+                </div>
+            </div>
+        
+            <div class="details">
+                <label for="">password*</label>
+                <div class="icons"></div>
+                
+                <input type="password" name="password" id="password" class="password-input">
+                <span class="ti-eye"></span>  
+                <p class="error message"></p>
+            </div>
+
+            <div class="details">
+            <label for="">confirm password*</label>
+            <div class="icons"></div>
+            
+            <input type="password" name="confirm password" id="confirm-password" class="confirm-password-input">
+            <span class="ti-eye"></span>
+            <p class="error message"></p>
+        </div>
+
+        <div class="btn">
+            <input type="submit"  value="next" id="submit-btn">
+        </div>
+        </form>
+    </div>
+ <script src="script/script.js"></script>   
+</body>
+</html>
